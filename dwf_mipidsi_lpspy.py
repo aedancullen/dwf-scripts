@@ -1,3 +1,5 @@
+# Decode MIPI DSI LP-mode commands on lane 0 from a set of scope captures
+
 import sys
 import numpy as np
 
