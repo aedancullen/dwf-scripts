@@ -21,7 +21,7 @@ if hdwf.value == 0:
     quit()
 
 ADDR = 0x4C
-rgRX = rgRX = (c_ubyte*2)()
+rgRX = (c_ubyte*2)()
 pNak = c_int(0)
 
 dwf.FDwfDigitalI2cRateSet(hdwf, c_double(50000))
