@@ -45,7 +45,7 @@ def process_one_dataset(data):
 
 for filename in sys.argv[1:]:
     print("Loading", filename)
-    data = np.loadtxt(filename, delimiter=',', dtype=np.float32, usecols=range(1,3), skiprows=10)
+    data = np.loadtxt(filename, delimiter=',', dtype=np.float32, usecols=range(0,2), skiprows=10)
     print("Processing", filename)
     out = process_one_dataset(data)
     for item in out:
